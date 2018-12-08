@@ -22,7 +22,7 @@ the future at family dinner.
 
 EOF = b'\0'
 
-im = Image.open('image.png')
+im = Image.open('original.png')
 pixels = list(im.getdata())
 
 new_pixels = []
