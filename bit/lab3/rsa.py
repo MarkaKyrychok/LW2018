@@ -4,28 +4,23 @@ from Crypto.Cipher import PKCS1_OAEP
 from Crypto.PublicKey import RSA
 
 
-plaintext = b"""Known throughout the world, the works of William Shakespeare have been performed in countless hamlets,
- villages, cities and metropolises for more than 400 years.
- And yet, the personal history of William Shakespeare is somewhat a mystery.
- There are two primary sources that provide historians with a basic outline of his life.
- One source is his work - the plays, poems and sonnets - and the other is official documentation
- such as church and court records. However, these only provide brief sketches of specific events in his life and
- provide little on the person who experienced those events.
-While it`s difficult to determine the exact chronology of William Shakespeare`s plays,
-over the course of two decades, from about 1590 to 1613, he wrote a total of 37 plays revolving around
-several main themes: histories, tragedies, comedies and tragicomedies.
-With the exception of the tragic love story Romeo and Juliet, William Shakespeare's
-first plays were mostly histories. Henry VI (Parts I, II and III), Richard II and Henry V
-dramatize the destructive results of weak or corrupt rulers, and have been interpreted
-by drama historians as Shakespeare's way of justifying the origins of the Tudor Dynasty.
- Julius Caesar portrays upheaval in Roman politics that may have resonated with viewers at
- a time when England`s aging monarch, Queen Elizabeth I, had no legitimate heir, thus creating
- the potential for future power struggles.
-Shakespeare also wrote several comedies during his early period:
- the witty romance A Midsummer Night's Dream, the romantic Merchant of Venice,
-  the wit and wordplay of Much Ado About Nothing, the charming As You Like It and Twelfth Night.
-Other plays written before 1600 include Titus Andronicus, The Comedy of Errors, The Two Gentlemen of Verona,
- The Taming of the Shrew, Love`s Labour`s Lost, King John, The Merry Wives of Windsor and Henry V.
+plaintext = b"""You don’t even need to be in the same room or the same country. Studies show that reading bad news 
+or seeing videos of something scary raises your pulse, makes you sweat, and dilates your pupils. Our preprogrammed 
+physiological reactions to danger can be triggered by a tweet. That’s why the Oxford Circus panic was so bad: It 
+was amplified by social media.
+Fear can be transmitted digitally as easily as it can physically—and that’s a problem because digital technologies 
+reach everyone. It’s not a few thousand people in a crowd anymore. Three-quarters of adults on earth now have a smartphone, 
+which means we’re getting 24-hour access to all the worst stories happening everywhere to 7.6 billion people—all the time.
+The speed and tenor of cultural conversation is now mind-bogglingly fast. The moment something bad happens somewhere 
+on the planet, fear ripples through the ether. One person armed with a bad story can infect millions of others in a 
+few minutes. That’s why, right now, the English-speaking world is in the middle of a fear pandemic.
+Every day terrifying stories sweep through the global village, in articles, tweets, and evening broadcasts, and they 
+are amplified a million times over until there’s nowhere to hide. Algorithmic bias, mental illness, foreign infidels, 
+chronic pain, hooded extremists, robots coming to take our jobs, burning forests, warlike naval maneuvers, marching 
+racists, rising waters, surveillance regimes, trade wars, toxic chemicals, predatory capitalism, roaming gangs of 
+criminal youths, drug overdoses, benefit-devouring migrant caravans massing at the border… the list goes on and on. 
+The fear virus takes hundreds of forms and mutates and spreads every time we click or watch or mutter darkly about 
+the future at family dinner.
 """
 key = RSA.generate(bits=1024)
 cipher = PKCS1_OAEP.new(key)
